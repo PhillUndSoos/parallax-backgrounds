@@ -22,6 +22,7 @@ const backgroundLayer5 = new Image();
 backgroundLayer5.src = './media/layer-5.png';
 
 //this is the slider, the slider is always equal to the game speed
+    //this is the slider, the slider is always equal to the game speed
 //an evven listener makes it possible to change the speed by adjusting the slider in the browser
 const slider = document.getElementById('slider');
 slider.value = gameSpeed
@@ -84,3 +85,4 @@ function animate() {
 };
 //calls the animate() function.
 animate();
+});
