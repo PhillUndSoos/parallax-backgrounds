@@ -41,7 +41,6 @@ class Layer {
         this.y = 0;
         this.width = 2400;
         this.height = 700;
-        // this.x2 = this.width;
         this.image = image;
         this.speedModifier = speedModifier;
         this.speed = gameSpeed * this.speedModifier;
@@ -53,11 +52,7 @@ class Layer {
         if (this.x <= -this.width) {
             this.x = 0;
         }
-        // if (this.x2 <= -this.width) {
-        //     this.x2 = this.width + this.x - this.speed;
-        // }
         this.x = Math.floor(this.x - this.speed);
-        this.x2 = Math.floor(this.x - this.speed);
     }
 
     //this method draws the image at a specified location at specified dimensions set by the constructor
@@ -87,5 +82,5 @@ function animate() {
     });
     requestAnimationFrame(animate);
 };
-//calls the animate() function
+//calls the animate() function.
 animate();
